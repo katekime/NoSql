@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Coffee Shop</title>
+  <link rel="stylesheet" href="/css/styles.css" />
+
+  <style>
+    .hero {
+      position: relative;
+      height: calc(100vh - 70px);
+      overflow: hidden;
+    }
+
+    .hero img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .hero-content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: rgba(0, 0, 0, 0.6);
+      padding: 40px 60px;
+      border-radius: 12px;
+      text-align: center;
+      color: white;
+    }
+
+    .hero-content h1 {
+      font-size: 42px;
+      margin-bottom: 10px;
+    }
+
+    .hero-content p {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    .hero-content a {
+      background: #6f4e37;
+      color: white;
+      padding: 12px 28px;
+      text-decoration: none;
+      border-radius: 6px;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="logo">Coffee Shop</div>
+
+  <div class="nav-links">
+    <a href="/">Home</a>
+    <a href="/pages/Menu.html">Menu</a>
+    <a href="/pages/Cart.html">Cart</a>
+    <a href="/pages/Orders.html">Orders</a>
+
+    <a href="/pages/Login.html" id="login-link">Login</a>
+    <a href="/pages/Register.html" id="register-link">Register</a>
+    <button id="logout-btn" style="display:none;">Logout</button>
+  </div>
+</nav>
+
+<section class="hero">
+  <img src="/images/hero.jpeg" alt="Coffee background">
+
+  <div class="hero-content">
+    <h1>Welcome to Coffee Shop</h1>
+    <p>Order your favorite coffee online.</p>
+    <a href="/pages/Menu.html">View Menu</a>
+  </div>
+</section>
+
+<script src="/js/api.js"></script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Your Cart | Coffee Shop</title>
+  <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="logo">Coffee Shop</div>
+
+  <div class="user-greet">
+    <span id="user-name"></span>
+  </div>
+
+  <div class="nav-links">
+    <a href="/">Home</a>
+    <a href="/pages/Menu.html">Menu</a>
+    <a href="/pages/Cart.html">Cart</a>
+    <a href="/pages/Orders.html">Orders</a>
+
+    <a href="/pages/Login.html" id="login-link">Login</a>
+    <a href="/pages/Register.html" id="register-link">Register</a>
+    <button id="logout-btn" style="display:none;">Logout</button>
+  </div>
+</nav>
+
+<main class="container">
+  <h1>Your Cart</h1>
+
+  <div id="cart" class="card-list"></div>
+
+  <div class="cart-summary">
+    <h3 id="totalPrice">Total: $0</h3>
+    <button class="btn-primary" onclick="placeOrder()">Place Order</button>
+  </div>
+</main>
+
+<script src="/js/api.js"></script>
+<script src="/js/cart.js"></script>
+</body>
+</html>
